@@ -1,0 +1,14 @@
+.nav-bar{
+    padding: 0;
+}
+.nav-section-items{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+.search-field{
+    margin: 0;
+}
