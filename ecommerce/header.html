@@ -5,50 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://temp-ui.netlify.app/style.css"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>FreshBuy</title>
 </head>
 <body>
-    <nav class="nav-bar shadow-box">
-        <!-- Left Navigation Section -->
-        <div class="nav-section">
-            <div class="logo">
-                <a href="index.html" >
-                    <img src="logo.png" alt="logo">
-                </a>
-                <span class="brand-text">FreshCart</span>
-            </div>
-            <!-- <ul class="list-style-none nav-section-items">
-                <li class="list-inline-item margin-l margin-r">
-                    <a href="index.html" class="link-style-none nav-item-style ">Home</a>
-                </li>
-                <li class="list-inline-item margin-l">
-                    <a href="docsite/doc.html" class="link-style-none nav-item-style ">Documentation</a>
-                </li>
-            </ul> -->
-        </div>
-        <!-- Right Navigation Section -->
-        <div class="nav-section">
-           <ul class="list-style-none nav-section-items">
-               
-                <li class="list-inline-item input search-field outlined ">
-                    <input type="text" name="username" placeholder="Search here...">
+    <div class="grid-container">
+        <nav class="navigation-bar">
+            <section class="brand logo">
+                    <a href="index.html" >
+                        <img src="freshbuy-logo.png" alt="logo">
+                    </a>
+            </section>
+            <section class="search-item">
+                <div class="input search-field outlined ">
                     <button class="search-icon"><i class="fa fa-search"></i></button>
-                </li>
-                <li class="list-inline-item">
-                    <button class="btn btn-solid-primary" >Login</button>
-                </li>
-                <li class="list-inline-item ">
-                    <a href="" class="nav-icon-link link-style-none">
-                        <span class="margin-r"><i class="fas fa-heart nav-icon"></i></span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="" class="nav-icon-link link-style-none">
-                        <span class="margin-r"><i class="fa fa-shopping-cart nav-icon" aria-hidden="true"></i></span>  
-                    </a>
-                </li>
-           </ul> 
+                    <input type="text" name="username" placeholder="Search here...">
+                </div>
+            </section>
+            <section class="account-data">
+                <button class="btn btn-solid-primary" >Login</button>
+                <div class="avatar avatar-text-xs avatar-text img-round e-profile" role="img" alt="Avatar">AB</div>
+                <button class="badge-container badge-btn">
+                    <i class="fas fa-heart icon"></i>
+                    <span class="status-badge-icon bg-red wc">5</span> 
+                </button>
+                <button class="badge-container badge-btn">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span class="status-badge-icon bg-red cc">3</span> 
+                </button>
+                <button class="btn btn-icon-primary e-signout"><i class="fa fa-sign-out fa-2x"></i></button>
+            </section>
+        </nav>
+        <div class="hero-section">
+            <img src="mango-1.jpg" alt="Image">
+            <img src="mango-2.jpg" alt="Image">
+            <img src="mango-1.jpg" alt="Image">
+            <img src="mango-2.jpg" alt="Image">
+            <img src="mango-1.jpg" alt="Image">
         </div>
-    </nav>
+        <div class="product-banner">
+            <div id="slider">
+                <img src="i.jpg" alt="">
+                <img src="i.jpg" alt="">
+                <img src="i.jpg" alt="">
+                <img src="i.jpg" alt="">
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+         </div>
+         <div class="main-products">
+            <section class="first-main">
+                Fresh fruits and vegetables from farm to home, Occassional supply
+                <img src="i.jpg" alt="">
+            </section>
+            <section class="second-main">
+                Fresh fruits and vegetables, all time available products
+                <img src="i.jpg" alt="">
+            </section>
+         </div>
+    </div>
+    <script>
+        var slide = document.querySelector("#slider");
+        var btn1 = document.querySelector("#btn1");
+        var btn2 = document.querySelector("#btn2");
+        var btn3 = document.querySelector("#btn3");
+        var btn4 = document.querySelector("#btn4");
+        btn1.onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            btn1.classList.add("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn2.onclick = function(){
+            slide.style.transform = "translateX(-100%)";
+            btn2.classList.add("active");
+            btn1.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn3.onclick = function(){
+            slide.style.transform = "translateX(-200%)";
+            btn3.classList.add("active");
+            btn2.classList.remove("active");
+            btn1.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn4.onclick = function(){
+            slide.style.transform = "translateX(-300%)";
+            btn4.classList.add("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn1.classList.remove("active");
+        }
+    </script>
 </body>
 </html>

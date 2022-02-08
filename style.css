@@ -1,0 +1,7 @@
+@import url(ecommerce/header.css);
+@import url(ecommerce/product.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}

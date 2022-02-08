@@ -1,0 +1,21 @@
+.grid-container-p{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar'
+        'filter main-p main-p main-p main-p main-p'
+}
+.navigation-bar{
+    grid-area: nav-bar;
+    min-height: 5rem;
+}
+.filter-section{
+    grid-area: filter;
+    background-color: hotpink;
+}
+.product-list{
+    grid-area: main-p;
+    background-color:indigo;
+}
