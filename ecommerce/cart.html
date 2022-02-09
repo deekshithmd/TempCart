@@ -50,6 +50,11 @@
                             (<span class="rating-number">2333</span>)
                         </div>
                         <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                        <span class="qty-scale text-xl">Quantity:
+                            <button class="inc">+</button>
+                            <input type="number" id="qty" readonly="" value="0">
+                            <button class="dec">-</button>
+                        </span>
                         <button class="btn btn-solid-primary" >Move to Wishlist</button>
                         <button class="btn btn-outline-primary" >Remove</button>
                     </div>
@@ -66,6 +71,11 @@
                             (<span class="rating-number">2333</span>)
                         </div>
                         <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                        <span class="qty-scale text-xl">Quantity:
+                            <button class="inc">+</button>
+                            <input type="number" id="qty" readonly="" value="0">
+                            <button class="dec">-</button>
+                        </span>
                         <button class="btn btn-solid-primary" >Move to Wishlist</button>
                         <button class="btn btn-outline-primary" >Remove</button>
                     </div>
@@ -82,6 +92,11 @@
                             (<span class="rating-number">2333</span>)
                         </div>
                         <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                        <span class="qty-scale text-xl">Quantity:
+                            <button class="inc">+</button>
+                            <input type="number" id="qty" readonly="" value="0">
+                            <button class="dec">-</button>
+                        </span>
                         <button class="btn btn-solid-primary" >Move to Wishlist</button>
                         <button class="btn btn-outline-primary" >Remove</button>
                     </div>
@@ -98,6 +113,11 @@
                             (<span class="rating-number">2333</span>)
                         </div>
                         <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                        <span class="qty-scale text-xl">Quantity:
+                            <button class="inc">+</button>
+                            <input type="number" id="qty" readonly="" value="0">
+                            <button class="dec">-</button>
+                        </span>
                         <button class="btn btn-solid-primary" >Move to Wishlist</button>
                         <button class="btn btn-outline-primary" >Remove</button>
                     </div>
@@ -114,6 +134,11 @@
                             (<span class="rating-number">2333</span>)
                         </div>
                         <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                        <span class="qty-scale text-xl">Quantity:
+                            <button class="inc">+</button>
+                            <input type="number" id="qty" readonly="" value="0">
+                            <button class="dec">-</button>
+                        </span>
                         <button class="btn btn-solid-primary" >Move to Wishlist</button>
                         <button class="btn btn-outline-primary" >Remove</button>
                     </div>
@@ -133,5 +158,19 @@
             </section>
         </div>
     </div>
+    <script>
+        const qty = document.querySelector("#qty");
+        const inc=document.querySelector(".inc")
+        const dec= document.querySelector(".dec");
+        inc.addEventListener('click', ()=>{
+            qty.value=parseInt(qty.value)+1;
+        })
+        dec.addEventListener('click', ()=>{
+            if(qty.value<=0)
+                qty.value=0;
+            else
+                qty.value=parseInt(qty.value)-1;
+        })
+    </script>
 </body>
 </html>

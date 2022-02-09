@@ -78,3 +78,40 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.qty-scale{
+    display: flex;
+    margin: 5px 0;
+    align-items: center; 
+}
+.qty-scale button{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    margin: 2px 4px;
+    color: rgb(255, 255, 255);
+    background:green;
+    box-shadow: 0 0 10px rgb(114, 113, 113);
+}
+.qty-scale button:active{
+    box-shadow: 0 0 10px rgb(248, 160, 160);
+}
+.qty-scale input{
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+    padding: 3px 0;
+    border: none;
+    width: 30px;
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgb(128, 127, 127);
+}
+
+.wishlisted{
+    color: red;
+}

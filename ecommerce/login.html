@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://temp-ui.netlify.app/style.css"/>
+    <link rel="stylesheet" href="../style.css">
+    <title>FreshBuy</title>
+</head>
+<body>
+    <div class="grid-container">
+        <nav class="navigation-bar">
+            <section class="brand logo">
+                    <a href="index.html" >
+                        <img src="freshbuy-logo.png" alt="logo">
+                    </a>
+            </section>
+            <section class="search-item">
+                <div class="input search-field outlined ">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="text" name="username" placeholder="Search here...">
+                </div>
+            </section>
+            <section class="account-data">
+                <button class="btn btn-solid-primary" >Login</button>
+                <div class="avatar avatar-text-xs avatar-text img-round e-profile" role="img" alt="Avatar">AB</div>
+                <button class="badge-container badge-btn">
+                    <i class="fas fa-heart icon"></i>
+                    <span class="status-badge-icon bg-red">5</span> 
+                </button>
+                <button class="badge-container badge-btn">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span class="status-badge-icon bg-red">3</span> 
+                </button>
+                <button class="btn btn-icon-primary e-signout"><i class="fa fa-sign-out fa-2x"></i></button>
+            </section>
+        </nav>
+        <div class="form">
+            <div class="form-data">
+                <h2 class="margin-b">Login</h2>
+                <div class="input input-labeled outlined margin-b">
+                    <label for="email">Enter Email Address</label>
+                    <input type="email" name="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="input input-labeled outlined">
+                    <label for="pass">Enter Passowrd</label>
+                    <input type="password" name="pass" placeholder="******">
+                </div>
+                <section class="handle">
+                    <label for="remember" class="text-xl">
+                        <input type="checkbox" class="margin-r">Remember me
+                    </label>
+                    <a href="" class="text-xl forgot-pwd text-primary margin-l">Forgot password?</a>
+                </section>
+                <button class="btn btn-solid-primary" >Login</button>
+                <span class="text-2xl">Create New Account?<i class="fa fa-angle-right margin-l"></i></span>
+            </div>
+        </div>
+        
+</body>
+</html>
