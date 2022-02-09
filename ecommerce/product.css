@@ -2,20 +2,34 @@
     width: 100vw;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        'nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar'
-        'filter main-p main-p main-p main-p main-p'
+        'nav-bar nav-bar nav-bar nav-bar nav-bar '
+        'filter main-p main-p main-p main-p'
 }
 .navigation-bar{
     grid-area: nav-bar;
     min-height: 5rem;
 }
 .filter-section{
+    position: sticky;
+    top: 0;
     grid-area: filter;
-    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    height: 100vh;
+    border-right: 2px solid black;
 }
 .product-list{
     grid-area: main-p;
-    background-color:indigo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
 }

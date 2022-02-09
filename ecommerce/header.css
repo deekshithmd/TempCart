@@ -39,7 +39,7 @@
     width: 25vw;
 }
 .search-item input{
-    width: 100%;
+    width: 90%;
     color: var(--secondary-text-color);
 }
 
